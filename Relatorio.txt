@@ -1,2 +1,63 @@
-# ProdutoMVC
-Java
+📄 Relatório Explicativo: Cadastro de Produtos com MVC em Java
+✅ 1. Introdução ao padrão MVC
+O padrão MVC (Model-View-Controller) é uma arquitetura de software amplamente utilizada no desenvolvimento de aplicações. Ele propõe a separação da aplicação em três camadas principais:
+
+Model (Modelo): Responsável pela lógica de negócios e manipulação dos dados.
+
+View (Visão): Responsável pela interface com o usuário, exibindo os dados.
+
+Controller (Controlador): Intermediário entre o modelo e a visão, processa as entradas do usuário e atualiza o modelo e a visão conforme necessário.
+
+Essa separação torna o código mais modular, reutilizável e de fácil manutenção, permitindo que cada parte evolua de forma independente.
+
+✅ 2. Justificativa da escolha do tema
+O tema Cadastro de Produtos foi escolhido por ser simples, didático e representar bem os princípios do padrão MVC. Esse tipo de sistema é comum em diversos contextos reais — como comércios, estoques ou marketplaces — e facilita o aprendizado ao envolver operações básicas como:
+
+Inserção de dados (cadastro)
+
+Listagem de registros
+
+Interação com o usuário via terminal
+
+Além disso, a escolha permite trabalhar com conceitos importantes como orientação a objetos, entrada de dados, listas e modularização, essenciais para qualquer programador Java iniciante ou intermediário.
+
+✅ 3. Estrutura do Projeto
+O projeto foi desenvolvido com a linguagem Java e gerenciado com o Apache Maven, organizando a aplicação nas seguintes camadas:
+
+📦 Estrutura de pacotes:
+sql
+Copiar
+Editar
+ProdutoMVC/
+├── model/          --> Representa os dados (Produto)
+├── view/           --> Responsável pela interface com o usuário (ProdutoView)
+├── controller/     --> Lógica de controle e fluxo entre Model e View (ProdutoController)
+└── app/            --> Classe principal com o método main (Main.java)
+🧱 Componentes:
+Model (model/Produto.java):
+
+Classe Produto representa os dados com atributos id, nome, preço.
+
+View (view/ProdutoView.java):
+
+Classe ProdutoView exibe mensagens e listas no console.
+
+Controller (controller/ProdutoController.java):
+
+Classe ProdutoController gerencia a lógica de cadastro e listagem de produtos.
+
+Main (app/Main.java):
+
+Ponto de entrada do programa. Cria objetos e inicia a interação com o usuário via terminal.
+
+✅ 4. Conclusão sobre o aprendizado
+O desenvolvimento deste projeto permitiu aplicar na prática os conceitos de programação orientada a objetos com Java e o padrão de arquitetura MVC. Foi possível entender como separar responsabilidades entre diferentes partes da aplicação, deixando o código mais organizado e de fácil manutenção.
+
+Além disso, o uso do Apache Maven contribuiu para uma melhor estruturação do projeto e familiarização com ferramentas profissionais de build e gerenciamento de dependências.
+
+Com este exercício, ficou evidente a importância de padrões de projeto para a escalabilidade e clareza de aplicações Java, mesmo nas mais simples.
+
+📝 Observações finais (opcional)
+Este projeto pode ser expandido com persistência em banco de dados (via JDBC) ou interface gráfica (com JavaFX ou Swing).
+
+Foi utilizado o console para facilitar a compreensão da lógica MVC antes de avançar para interfaces mais complexas.
